@@ -1,4 +1,6 @@
 import React from "react";
+// import video from "../src/assets/fallingemojis.mp4";
+
 // each button rest to a random value on click
 class EmojiSlot extends React.Component {
   constructor() {
@@ -42,7 +44,7 @@ class EmojiSlot extends React.Component {
     const {
       emojiSet1,
       emojiSet2,
-      emojiSet3,
+      emojiSet3,   
       emojiSet4,
       emojiSet5,
       emojiSet6,
@@ -53,6 +55,11 @@ class EmojiSlot extends React.Component {
 
     return (
       <div className="gameBox">
+         {/* <div id="background" >
+         <video id="bg-video" autoplay muted loop>
+         <source type="video/mp4" src={video} />
+         </video>
+         </div> */}
         <div className="row row1">
           <div className="box box1">{emojiSet1}</div>
           <div className="box box2">{emojiSet2}</div>
