@@ -3,7 +3,7 @@ import React from "react";
 class EmojiSlot extends React.Component {
   constructor() {
     super();
-    this.emojis = ["🥺", "💩", "🤑", "🎰", "🇺🇸", "🙈", "😏", "💣", "☘️"];
+    this.emojis = ["🥺", "💩", "🤑", "🎰", "🇺🇸", "🙈", "😏", "💣", "☘️", "❤️‍🔥"];
 
     this.state = {
       emojiSet1: "",
@@ -24,6 +24,7 @@ class EmojiSlot extends React.Component {
   };
 
   spin = () => {
+   // const { emojis } = this.emojis
     this.setState({
       emojiSet1: this.randomize(this.emojis),
       emojiSet2: this.randomize(this.emojis),
@@ -49,6 +50,7 @@ class EmojiSlot extends React.Component {
       emojiSet8,
       emojiSet9,
     } = this.state;
+
     return (
       <div className="gameBox">
         <div className="row row1">
@@ -68,7 +70,7 @@ class EmojiSlot extends React.Component {
         </div>
         <div className="spinWrapper">
           <button onClick={this.spin} className="spinButton">
-            CLICK TO SPIN
+             FeelingLucky?
           </button>
         </div>
       </div>
